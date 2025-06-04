@@ -7,7 +7,7 @@ const testimonials = [
     id: 1,
     name: 'Akshay Kumar',
     position: 'Developer',
-    text: 'MedIQ helped me understand my symptoms when I was feeling anxious about what was wrong. The doctor it recommended was perfect for my situation.',
+    text: 'ClinIQ helped me understand my symptoms when I was feeling anxious about what was wrong. The doctor it recommended was perfect for my situation.',
     rating: 5,
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
   },
@@ -15,7 +15,7 @@ const testimonials = [
     id: 2,
     name: 'Jishnu Chauhan',
     position: 'Lead Engineer',
-    text: 'As someone with chronic health issues, I appreciate how MedIQ lets me track my symptoms over time. It gives me better conversations with my doctors.',
+    text: 'As someone with chronic health issues, I appreciate how ClinIQ lets me track my symptoms over time. It gives me better conversations with my doctors.',
     rating: 5,
     image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
   },
@@ -185,7 +185,7 @@ const TestimonialsSection: React.FC = () => {
             What Our Users Say
           </h2>
           <p className="text-lg text-blue-50/90 max-w-2xl mx-auto">
-            Discover how MedIQ is helping people take control of their health journey with our innovative platform.
+            Discover how ClinIQ is helping people take control of their health journey with our innovative platform.
           </p>
         </motion.div>
 

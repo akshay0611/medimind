@@ -18,10 +18,10 @@ export default class PDFExportService {
 
       // Set up document metadata
       doc.setProperties({
-        title: 'MediQ Health Assistant - Symptom Report',
+        title: 'ClinIQ Health Assistant - Symptom Report',
         subject: 'Symptom Analysis Report',
-        author: 'MediQ Health Assistant',
-        creator: 'MediQ Health Assistant'
+        author: 'ClinIQ Health Assistant',
+        creator: 'ClinIQ Health Assistant'
       });
 
       // Document styling constants
@@ -36,7 +36,7 @@ export default class PDFExportService {
       doc.setTextColor(255, 255, 255);
       doc.setFontSize(20);
       doc.setFont('helvetica', 'bold');
-      doc.text('MediQ Health Assistant', pageWidth / 2, 15, { align: 'center' });
+      doc.text('ClinIQ Health Assistant', pageWidth / 2, 15, { align: 'center' });
       doc.setFontSize(12);
       doc.text('Symptom Analysis Report', pageWidth / 2, 23, { align: 'center' });
       
@@ -226,7 +226,7 @@ export default class PDFExportService {
       }
 
       // Download the PDF
-      doc.save('MediQ-Symptom-Report.pdf');
+      doc.save('ClinIQ-Symptom-Report.pdf');
     } catch (error) {
       console.error('Error generating PDF report:', error);
       throw error;

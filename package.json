@@ -1,5 +1,5 @@
 {
-  "name": "mediq-healthcare-app",
+  "name": "cliniq-healthcare-app",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -44,7 +44,7 @@
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
   },
-  "description": "MedIQ is an innovative full-stack healthtech platform that leverages AI to provide accurate symptom analysis, doctor discovery, and appointment booking — all in one place. Designed for the **FullStack Forge Hackathon**, MedIQ blends powerful AI with scalable architecture to solve real-world healthcare challenges.",
+  "description": "ClinIQ is an innovative full-stack healthtech platform that leverages AI to provide accurate symptom analysis, doctor discovery, and appointment booking — all in one place. Designed for the **FullStack Forge Hackathon**, ClinIQ blends powerful AI with scalable architecture to solve real-world healthcare challenges.",
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",

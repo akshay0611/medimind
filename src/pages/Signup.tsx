@@ -95,7 +95,7 @@ export default function Signup() {
             Create Account
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Join the MediQ community and get access to personalized healthcare services.
+            Join the ClinIQ community and get access to personalized healthcare services.
           </p>
         </motion.div>
 

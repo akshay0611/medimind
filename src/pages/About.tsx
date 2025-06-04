@@ -123,7 +123,7 @@ export default function About() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="inline-flex justify-center items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/50 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-sm font-medium mb-6"
           >
-            <span>About MedIQ</span>
+            <span>About ClinIQ</span>
           </motion.div>
           
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
@@ -194,7 +194,7 @@ export default function About() {
             <div className="inline-flex justify-center items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/50 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-sm font-medium mb-3">
               Our Journey
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">The MedIQ Story</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">The ClinIQ Story</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               From a simple idea to a healthcare platform used by thousands — our journey of making healthcare more accessible.
             </p>
@@ -453,7 +453,7 @@ export default function About() {
 
             <div className="mt-12 pt-8 border-t border-gray-100 dark:border-neutral-700/50">
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Get In Touch</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">Have questions or want to learn more about MedIQ?</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">Have questions or want to learn more about ClinIQ?</p>
               <motion.a
                 href="/contact"
                 whileHover={{ scale: 1.03 }}
@@ -489,7 +489,7 @@ export default function About() {
                   Join the Healthcare Revolution
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-                  Experience personalized, accessible, and accurate healthcare insights with MedIQ. 
+                  Experience personalized, accessible, and accurate healthcare insights with ClinIQ. 
                   Sign up today and be part of our mission to transform healthcare for everyone.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">

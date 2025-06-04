@@ -1,6 +1,6 @@
-# 💊 MedIQ – AI-Powered Health Symptom Checker & Appointment Platform 
+# 💊 ClinIQ – AI-Powered Health Symptom Checker & Appointment Platform 
 
-MedIQ is an innovative full-stack healthtech platform that leverages AI to provide accurate symptom analysis, doctor discovery, and appointment booking — all in one place. Designed for the **FullStack Forge Hackathon**, MedIQ blends powerful AI with scalable architecture to solve real-world healthcare challenges.
+ClinIQ is an innovative full-stack healthtech platform that leverages AI to provide accurate symptom analysis, doctor discovery, and appointment booking — all in one place. Designed for the **FullStack Forge Hackathon**, ClinIQ blends powerful AI with scalable architecture to solve real-world healthcare challenges.
 
 
 
@@ -41,9 +41,9 @@ MedIQ is an innovative full-stack healthtech platform that leverages AI to provi
 ### 1️⃣ Clone the Repo
 
 ```
-git clone https://github.com/yourusername/mediq.git
+git clone https://github.com/yourusername/ClinIQ.git
 
-cd mediq
+cd ClinIQ
 
 npm install
 
@@ -54,7 +54,7 @@ npm run dev
 ### ✅ 2. `CONTRIBUTING.md`
 
  
-# 🤝 Contributing to MedIQ
+# 🤝 Contributing to ClinIQ
 
 We welcome contributions from developers, designers, testers, and writers. Here's how you can help:
 

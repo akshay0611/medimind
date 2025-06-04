@@ -50,7 +50,7 @@ export default function TermsOfService() {
             Terms of Service
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            The rules and guidelines for using MedIQ's services
+            The rules and guidelines for using ClinIQ's services
           </p>
         </motion.div>
 
@@ -83,7 +83,7 @@ export default function TermsOfService() {
                 Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Welcome to MedIQ ("we", "our", or "us"). These Terms of Service ("Terms") govern your access to and use of our website, mobile applications, and related services (collectively, our "Services"). By accessing or using our Services, you agree to be bound by these Terms.
+                Welcome to ClinIQ ("we", "our", or "us"). These Terms of Service ("Terms") govern your access to and use of our website, mobile applications, and related services (collectively, our "Services"). By accessing or using our Services, you agree to be bound by these Terms.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 If you do not agree with these Terms, you must not use our Services. We reserve the right to update or modify these Terms at any time, and such changes will be effective upon posting on our website.
@@ -143,7 +143,7 @@ export default function TermsOfService() {
                 Intellectual Property
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                All content, features, and functionality of the Services, including but not limited to text, graphics, logos, and software, are the exclusive property of MedIQ or its licensors and are protected by copyright, trademark, and other intellectual property laws.
+                All content, features, and functionality of the Services, including but not limited to text, graphics, logos, and software, are the exclusive property of ClinIQ or its licensors and are protected by copyright, trademark, and other intellectual property laws.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
                 You are granted a limited, non-transferable, non-exclusive license to access and use the Services for personal,Bryan Garner use only. You may not copy, modify, distribute, or create derivative works from our Services without our prior written permission.
@@ -172,7 +172,7 @@ export default function TermsOfService() {
                 The Services are provided on an "as is" and "as available" basis. We do not warrant that the Services will be uninterrupted, error-free, or free of viruses or other harmful components.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                To the fullest extent permitted by law, MedIQ will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising from your use of the Services.
+                To the fullest extent permitted by law, ClinIQ will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, arising from your use of the Services.
               </p>
             </motion.div>
 
@@ -211,7 +211,7 @@ export default function TermsOfService() {
                 If you have any questions about these Terms, please contact us:
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-100 dark:border-blue-800/50">
-                <p className="text-gray-800 dark:text-gray-200 font-medium">MedIQ Health Technologies Pvt. Ltd.</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">ClinIQ Health Technologies Pvt. Ltd.</p>
                 <p className="text-gray-600 dark:text-gray-300 mt-2">Email: teamcodexsupport@gmail.com</p>
                 <p className="text-gray-600 dark:text-gray-300">Phone: +91 9876543210</p>
                 <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District Bangalore Karnataka 560001 India</p>

@@ -200,7 +200,7 @@ const Hero: React.FC = () => {
             className="text-center text-lg md:text-xl text-blue-50/90 mb-12 max-w-2xl mx-auto leading-relaxed"
             variants={animations.itemVariants}
           >
-            MedIQ combines medical expertise with AI to provide reliable symptom analysis and
+            ClinIQ combines medical expertise with AI to provide reliable symptom analysis and
             connect you with healthcare professionals when you need them most.
           </motion.p>
 

@@ -50,7 +50,7 @@ export default function Accessibility() {
             Accessibility
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            MedIQ's commitment to making our services accessible to everyone
+            ClinIQ's commitment to making our services accessible to everyone
           </p>
         </motion.div>
 
@@ -83,7 +83,7 @@ export default function Accessibility() {
                 Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                MedIQ Health Technologies Pvt. Ltd. ("we", "our", or "us") is dedicated to ensuring that our website, mobile applications, and related services (collectively, our "Services") are accessible to all users, including those with disabilities. We strive to comply with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA and other applicable accessibility standards.
+                ClinIQ Health Technologies Pvt. Ltd. ("we", "our", or "us") is dedicated to ensuring that our website, mobile applications, and related services (collectively, our "Services") are accessible to all users, including those with disabilities. We strive to comply with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA and other applicable accessibility standards.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 This Accessibility Statement outlines our ongoing efforts to enhance accessibility and provide an inclusive experience for all users.
@@ -199,8 +199,8 @@ export default function Accessibility() {
                 If you have questions, feedback, or need assistance with accessibility, please reach out to us:
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-100 dark:border-blue-800/50">
-                <p className="text-gray-800 dark:text-gray-200 font-medium">MedIQ Health Technologies Pvt. Ltd.</p>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: accessibility@mediq.ai</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">ClinIQ Health Technologies Pvt. Ltd.</p>
+                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: accessibility@ClinIQ.ai</p>
                 <p className="text-gray-600 dark:text-gray-300">Phone: +91 9876543210</p>
                 <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District Bangalore Karnataka 560001 India</p>
               </div>

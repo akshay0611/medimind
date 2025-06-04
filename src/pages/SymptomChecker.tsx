@@ -148,7 +148,7 @@ const SymptomChecker: React.FC = () => {
             className="inline-flex justify-center items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/50 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-sm font-medium mb-6"
           >
             <HeartPulseIcon className="w-4 h-4 mr-2" />
-            <span>MediQ Health Assistant</span>
+            <span>ClinIQ Health Assistant</span>
           </motion.div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
             AI-Powered Symptom Checker

@@ -18,7 +18,7 @@ import {
   MessageSquare,
   Info
 } from 'lucide-react';
-import MedIQLogo from '../common/MedIQLogo';
+import ClinIQLogo from '../common/ClinIQLogo';
 import Button from '../common/Button';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -105,11 +105,11 @@ const Navbar: React.FC = () => {
             className="flex items-center justify-center w-10 h-10 mr-2"
             whileHover={{ rotate: [0, -5, 5, -5, 0], transition: { duration: 0.5 } }}
           >
-            <MedIQLogo size={40} />
+            <ClinIQLogo size={40} />
           </motion.div>
           <div className="relative overflow-hidden">
             <span className="text-xl font-bold bg-gradient-to-r from-primary-600 to-blue-500 text-transparent bg-clip-text dark:from-primary-400 dark:to-blue-300">
-              MedIQ
+              ClinIQ
             </span>
             <motion.span 
               className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary-600 to-blue-500 dark:from-primary-400 dark:to-blue-300"

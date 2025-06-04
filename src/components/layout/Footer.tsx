@@ -15,7 +15,7 @@ import {
   Globe,
   AlertCircle
 } from 'lucide-react';
-import MedIQLogo from '../common/MedIQLogo';
+import ClinIQLogo from '../common/ClinIQLogo';
 import Button from '../common/Button';
 
 const Footer: React.FC = () => {
@@ -90,11 +90,11 @@ const Footer: React.FC = () => {
                   whileHover={{ rotate: [0, -5, 5, -5, 0] }}
                   transition={{ duration: 0.5 }}
                 >
-                  <MedIQLogo size={30} />
+                  <ClinIQLogo size={30} />
                 </motion.div>
               </div>
               <div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-primary-400 text-transparent bg-clip-text">MedIQ</span>
+                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-primary-400 text-transparent bg-clip-text">ClinIQ</span>
                 <motion.span 
                   className="block h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-blue-400 to-primary-400 transition-all duration-300"
                   initial={{ width: 0 }}
@@ -112,25 +112,25 @@ const Footer: React.FC = () => {
       icon: <Facebook size={18} />, 
       color: "bg-blue-500", 
       name: "Facebook",
-      url: "https://facebook.com/mediq.healthcare" 
+      url: "https://facebook.com/ClinIQ.healthcare" 
     },
     { 
       icon: <Twitter size={18} />, 
       color: "bg-blue-400", 
       name: "Twitter",
-      url: "https://twitter.com/mediq_health" 
+      url: "https://twitter.com/ClinIQ_health" 
     },
     { 
       icon: <Instagram size={18} />, 
       color: "bg-pink-500", 
       name: "Instagram",
-      url: "https://instagram.com/mediq.official" 
+      url: "https://instagram.com/ClinIQ.official" 
     },
     { 
       icon: <Linkedin size={18} />, 
       color: "bg-blue-600", 
       name: "LinkedIn",
-      url: "https://linkedin.com/company/mediq-health" 
+      url: "https://linkedin.com/company/ClinIQ-health" 
     }
   ].map((social, index) => (
     <motion.a
@@ -372,7 +372,7 @@ const Footer: React.FC = () => {
                 <Heart size={16} fill="currentColor" />
               </motion.div>
               <p className="text-neutral-400 text-sm">
-                © {currentYear} MedIQ. All rights reserved.
+                © {currentYear} ClinIQ. All rights reserved.
               </p>
             </div>
             

@@ -51,7 +51,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            How MedIQ protects your data and respects your privacy
+            How ClinIQ protects your data and respects your privacy
           </p>
         </motion.div>
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
                 Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                MedIQ ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by MedIQ. This Privacy Policy applies to our website, mobile applications, and related services (collectively, our "Services").
+                ClinIQ ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by ClinIQ. This Privacy Policy applies to our website, mobile applications, and related services (collectively, our "Services").
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 By accessing or using our Services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.
@@ -194,7 +194,7 @@ export default function PrivacyPolicy() {
                 <li><span className="font-semibold">The right to object</span> – You have the right to object to our processing of your personal data, under certain conditions</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300">
-                If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: privacy@mediq.ai
+                If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: privacy@ClinIQ.ai
               </p>
             </motion.div>
 
@@ -255,8 +255,8 @@ export default function PrivacyPolicy() {
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-100 dark:border-blue-800/50">
-                <p className="text-gray-800 dark:text-gray-200 font-medium">MedIQ Health Technologies Pvt. Ltd.</p>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: privacy@mediq.ai</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">ClinIQ Health Technologies Pvt. Ltd.</p>
+                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: privacy@ClinIQ.ai</p>
                 <p className="text-gray-600 dark:text-gray-300">Phone: +91 9876543210</p>
                    <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District Bangalore Karnataka 560001 India</p>
               </div>

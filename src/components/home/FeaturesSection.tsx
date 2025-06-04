@@ -82,13 +82,13 @@ const FeaturesSection: React.FC = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
            <div className="inline-block px-4 py-1.5 mb-4 rounded-full text-sm font-semibold bg-primary-600 text-white dark:bg-primary-500 dark:text-white">
-            Why Choose MedIQ
+            Why Choose ClinIQ
           </div>
           <h2 id="features-heading" className="text-4xl md:text-5xl font-bold text-neutral-800 dark:text-white mb-6 tracking-tight">
             Comprehensive Healthcare Solutions
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-            MedIQ provides all the tools you need to understand your symptoms and connect with healthcare professionals in one intuitive platform.
+            ClinIQ provides all the tools you need to understand your symptoms and connect with healthcare professionals in one intuitive platform.
           </p>
         </motion.div>
 

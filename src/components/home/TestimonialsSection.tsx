@@ -9,7 +9,7 @@ const testimonials = [
     position: 'Developer',
     text: 'MedIQ helped me understand my symptoms when I was feeling anxious about what was wrong. The doctor it recommended was perfect for my situation.',
     rating: 5,
-    image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const testimonials = [
     position: 'AI Researcher',
     text: 'The symptom checker is surprisingly accurate. It identified that I needed immediate care for what turned out to be appendicitis. Possibly saved my life!',
     rating: 5,
-    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
   },
 ];
 

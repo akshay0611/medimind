@@ -44,12 +44,12 @@ const DoctorFilter: React.FC<DoctorFilterProps> = ({ onFilter }) => {
     'Obstetrics and Gynecology'
   ];
   
-  const locations = [
-    'San Francisco, CA',
-    'Oakland, CA',
-    'San Jose, CA',
-    'Palo Alto, CA'
-  ];
+ const locations = [
+  'Delhi',
+  'Mumbai',
+  'Kolkata',
+  'Chennai'
+];
 
 
   const activeFiltersCount = [

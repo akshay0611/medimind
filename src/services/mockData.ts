@@ -134,9 +134,9 @@ export const getMockSymptomResult = (symptoms: string): SymptomResult => {
 export const mockDoctors: Doctor[] = [
   {
     id: "1",
-    name: "Dr. Emily Chen",
+    name: "Dr. Aisha Sharma",
     specialization: "Family Medicine",
-    location: "San Francisco, CA",
+    location: "Delhi",
     rating: 4.9,
     photoUrl: "https://images.pexels.com/photos/5214959/pexels-photo-5214959.jpeg",
     availability: ["Monday", "Tuesday", "Thursday"],
@@ -148,9 +148,9 @@ export const mockDoctors: Doctor[] = [
   },
   {
     id: "2",
-    name: "Dr. James Wilson",
+    name: "Dr. Meera Menon",
     specialization: "Internal Medicine",
-    location: "San Francisco, CA",
+    location: "Mumbai",
     rating: 4.7,
     photoUrl: "https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg",
     availability: ["Wednesday", "Friday"],
@@ -162,9 +162,9 @@ export const mockDoctors: Doctor[] = [
   },
   {
     id: "3",
-    name: "Dr. Sarah Johnson",
+    name: "Dr. Kavita Banerjee",
     specialization: "Pediatrics",
-    location: "Oakland, CA",
+    location: "Kolkata",
     rating: 4.8,
     photoUrl: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg",
     availability: ["Monday", "Wednesday", "Friday"],
@@ -176,9 +176,9 @@ export const mockDoctors: Doctor[] = [
   },
   {
     id: "4",
-    name: "Dr. Michael Rodriguez",
+    name: "Dr. Anjali Iyer",
     specialization: "Cardiology",
-    location: "San Jose, CA",
+    location: "Chennai",
     rating: 4.9,
     photoUrl: "https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg",
     availability: ["Tuesday", "Thursday"],

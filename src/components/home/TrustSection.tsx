@@ -16,8 +16,8 @@ const TrustSection: React.FC = () => {
   const trustItems = [
     {
       icon: <Shield size={28} />,
-      title: 'HIPAA Compliant',
-      description: 'Your health data is protected by industry-standard security protocols',
+      title: 'DPDP & DISHA Compliant',
+      description: 'Health data protected under Indian privacy laws',
       color: 'from-blue-500 to-indigo-600',
       lightColor: 'bg-blue-50',
       iconColor: 'text-blue-600',
@@ -158,7 +158,7 @@ const TrustSection: React.FC = () => {
         >
           <div className="flex items-center space-x-2 bg-neutral-100 dark:bg-neutral-700 px-4 py-2 rounded-lg">
             <Shield className="h-5 w-5 text-primary-600" />
-            <span className="text-sm font-medium text-neutral-700 dark:text-neutral-200">HIPAA Certified</span>
+            <span className="text-sm font-medium text-neutral-700 dark:text-neutral-200">DPDP & DISHA Compliant</span>
           </div>
           <div className="flex items-center space-x-2 bg-neutral-100 dark:bg-neutral-700 px-4 py-2 rounded-lg">
             <Lock className="h-5 w-5 text-primary-600" />

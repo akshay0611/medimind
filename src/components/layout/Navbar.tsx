@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -18,7 +17,6 @@ import {
   MessageSquare,
   Info
 } from 'lucide-react';
-import ClinIQLogo from '../common/ClinIQLogo';
 import Button from '../common/Button';
 import { useAuth } from '../../context/AuthContext';
 import { useTheme } from '../../context/ThemeContext';
@@ -98,17 +96,22 @@ const Navbar: React.FC = () => {
           : 'bg-white dark:bg-neutral-800'
       }`}
     >
-      <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <nav className="container mx-auto px-4 py-3 flex items-center justify-between"> 
       
         <Link to="/" className="flex items-center group" onClick={closeMenus}>
           <motion.div 
-            className="flex items-center justify-center w-10 h-10 mr-2"
+            className="flex items-center justify-center w-16 h-16 mr-2" 
             whileHover={{ rotate: [0, -5, 5, -5, 0], transition: { duration: 0.5 } }}
           >
-            <ClinIQLogo size={40} />
+            {/* Replaced SVG component with img logo */}
+            <img 
+              src="/ClinIQ_Logo.png" 
+              alt="ClinIQ Logo" 
+              className="w-full h-full object-contain" 
+            />
           </motion.div>
           <div className="relative overflow-hidden">
-            <span className="text-xl font-bold bg-gradient-to-r from-primary-600 to-blue-500 text-transparent bg-clip-text dark:from-primary-400 dark:to-blue-300">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-blue-500 text-transparent bg-clip-text dark:from-primary-400 dark:to-blue-300"> {/* Increased text size (text-xl to text-2xl) */}
               ClinIQ
             </span>
             <motion.span 

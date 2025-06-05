@@ -31,7 +31,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   useEffect(() => {
     // Check if user is stored in localStorage (for demo)
-    const storedUser = localStorage.getItem('mediq_user');
+    const storedUser = localStorage.getItem('cliniq_user');
     if (storedUser) {
       setCurrentUser(JSON.parse(storedUser));
     }
@@ -43,7 +43,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     try {
       // For demo, we'll just set the mock user
       setCurrentUser(MOCK_USER);
-      localStorage.setItem('mediq_user', JSON.stringify(MOCK_USER));
+      localStorage.setItem('cliniq_user', JSON.stringify(MOCK_USER));
     } catch (error) {
       console.error('Login error:', error);
       throw new Error('Invalid email or password');
@@ -58,7 +58,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
       // For demo, create a new user based on the mock
       const newUser = { ...MOCK_USER, name, email };
       setCurrentUser(newUser);
-      localStorage.setItem('mediq_user', JSON.stringify(newUser));
+      localStorage.setItem('cliniq_user', JSON.stringify(newUser));
     } catch (error) {
       console.error('Registration error:', error);
       throw new Error('Registration failed');
@@ -69,7 +69,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
   const logout = () => {
     setCurrentUser(null);
-    localStorage.removeItem('mediq_user');
+    localStorage.removeItem('cliniq_user');
   };
 
   return (

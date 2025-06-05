@@ -34,15 +34,19 @@ const features = [
     href: '/booking'
   },
   {
-    icon: <Shield size={28} />,
-    title: 'Private & Secure',
-    description: 'Your health data is encrypted and protected with industry-leading security standards.',
-    color: 'from-rose-500 to-pink-600',
-    lightColor: 'bg-rose-50',
-    iconColor: 'text-rose-600',
-    benefits: ['HIPAA compliant', 'End-to-end encryption', 'Secure data storage'],
-    href: '/security'
-  },
+  icon: <Shield size={28} />,
+  title: 'Private & Secure',
+  description: 'Your health data is encrypted and protected with industry-leading security standards.',
+  color: 'from-rose-500 to-pink-600',
+  lightColor: 'bg-rose-50',
+  iconColor: 'text-rose-600',
+  benefits: [
+    'IT Act compliant',
+    'End-to-end encryption',
+    'Secure data storage'
+  ],
+  href: '/security'
+},
 ];
 
 

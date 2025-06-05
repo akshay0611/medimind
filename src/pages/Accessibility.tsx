@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {DocumentTextIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import {DocumentTextIcon, GlobeAltIcon, UserGroupIcon } from '@heroicons/react/24/outline'; // Added UserGroupIcon for visual diversity
 
 export default function Accessibility() {
  
@@ -43,14 +43,14 @@ export default function Accessibility() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="inline-flex justify-center items-center px-4 py-1.5 rounded-full bg-blue-50 dark:bg-blue-900/50 border border-blue-100 dark:border-blue-800 text-blue-600 dark:text-blue-300 text-sm font-medium mb-6"
           >
-           
+            <UserGroupIcon className="w-4 h-4 mr-2" />
             <span>Accessibility Statement</span>
           </motion.div>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
             Accessibility
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            ClinIQ's commitment to making our services accessible to everyone
+            ClinIQ's commitment to making our services accessible to everyone in India.
           </p>
         </motion.div>
 
@@ -73,20 +73,20 @@ export default function Accessibility() {
                 <DocumentTextIcon className="w-6 h-6 text-blue-500 mr-3" />
                 <span className="text-blue-700 dark:text-blue-300 font-medium">Last Updated:</span>
               </div>
-              <span className="text-blue-700 dark:text-blue-300 font-medium">May 20, 2025</span>
+              <span className="text-blue-700 dark:text-blue-300 font-medium">June 10, 2025</span>
             </motion.div>
 
            
             <motion.div variants={itemVariants} className="mb-10">
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center">
-              
+                <GlobeAltIcon className="w-6 h-6 text-blue-500 mr-3" />
                 Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                ClinIQ Health Technologies Pvt. Ltd. ("we", "our", or "us") is dedicated to ensuring that our website, mobile applications, and related services (collectively, our "Services") are accessible to all users, including those with disabilities. We strive to comply with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA and other applicable accessibility standards.
+                ClinIQ Health Technologies Pvt. Ltd. ("we", "our", or "us") is dedicated to ensuring that our website, mobile applications, and related services (collectively, our "Services") are accessible to all users in India, including those with disabilities. We strive to comply with internationally recognized standards such as the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, and applicable Indian accessibility standards and laws.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                This Accessibility Statement outlines our ongoing efforts to enhance accessibility and provide an inclusive experience for all users.
+                This Accessibility Statement outlines our ongoing efforts to enhance accessibility and provide an inclusive digital experience for all our users.
               </p>
             </motion.div>
 
@@ -99,11 +99,11 @@ export default function Accessibility() {
                 We are committed to making our Services accessible by:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>Designing our Services with accessibility in mind from the outset</li>
-                <li>Regularly testing our Services for accessibility compliance</li>
-                <li>Training our team on accessibility best practices</li>
-                <li>Engaging with users to gather feedback on accessibility improvements</li>
-                <li>Partnering with accessibility experts to enhance our Services</li>
+                <li>Integrating accessibility into our design and development processes from the outset.</li>
+                <li>Regularly testing and reviewing our Services for accessibility compliance.</li>
+                <li>Providing training to our team members on accessibility principles and best practices.</li>
+                <li>Actively seeking and incorporating feedback from users, including those with disabilities, to improve accessibility.</li>
+                <li>Collaborating with accessibility experts and organizations to continuously enhance our Services.</li>
               </ul>
             </motion.div>
 
@@ -113,15 +113,15 @@ export default function Accessibility() {
                 Accessibility Features
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Our Services incorporate the following accessibility features to ensure an inclusive experience:
+                Our Services incorporate various accessibility features to ensure an inclusive experience, including but not limited to:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li><span className="font-semibold">Keyboard Navigation:</span> All interactive elements are accessible via keyboard</li>
-                <li><span className="font-semibold">Screen Reader Support:</span> Compatibility with popular screen readers like JAWS, NVDA, and VoiceOver</li>
-                <li><span className="font-semibold">Text Alternatives:</span> Alt text for images and descriptive labels for form inputs</li>
-                <li><span className="font-semibold">High Contrast Mode:</span> Support for high contrast themes for users with visual impairments</li>
-                <li><span className="font-semibold">Adjustable Text Size:</span> Options to increase or decrease text size without breaking the layout</li>
-                <li><span className="font-semibold">Consistent Navigation:</span> Predictable and logical navigation patterns across our Services</li>
+                <li><span className="font-semibold">Keyboard Navigation:</span> Ensuring all interactive elements and content can be accessed and operated using a keyboard.</li>
+                <li><span className="font-semibold">Screen Reader Support:</span> Aiming for compatibility with popular screen readers (e.g., JAWS, NVDA, VoiceOver) to assist users with visual impairments.</li>
+                <li><span className="font-semibold">Text Alternatives:</span> Providing alternative text for non-text content like images and descriptive labels for form inputs and controls.</li>
+                <li><span className="font-semibold">Visual Design:</span> Using sufficient color contrast, offering resizable text options, and ensuring layouts are responsive and adaptable.</li>
+                <li><span className="font-semibold">Understandable Content:</span> Striving for clear and simple language, and providing clear instructions and feedback.</li>
+                <li><span className="font-semibold">Consistent Navigation:</span> Maintaining predictable and logical navigation patterns across our Services.</li>
               </ul>
             </motion.div>
 
@@ -131,15 +131,15 @@ export default function Accessibility() {
                 Compliance Efforts
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We aim to align our Services with the following standards:
+                We aim to align our Services with the following standards and guidelines:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</li>
-                <li>Section 508 of the Rehabilitation Act (for U.S. federal compliance)</li>
-                <li>Americans with Disabilities Act (ADA) Title III requirements</li>
+                <li>Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</li>
+                <li>The Rights of Persons with Disabilities Act, 2016 (RPWD Act), which mandates accessibility for persons with disabilities in India, including in information and communication technology.</li>
+                <li>Guidelines for Indian Government Websites (GIGW) as a reference for best practices in digital accessibility in India, where applicable.</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300">
-                We conduct regular accessibility audits using both automated tools and manual testing to identify and address potential barriers.
+                We conduct regular accessibility audits and assessments using a combination of automated tools and manual testing by individuals knowledgeable in accessibility to identify and address potential barriers.
               </p>
             </motion.div>
 
@@ -149,18 +149,19 @@ export default function Accessibility() {
                 Feedback and Support
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We welcome feedback from users to help us improve the accessibility of our Services. If you encounter any accessibility barriers or have suggestions, please contact us.
+                Your feedback is crucial in helping us improve the accessibility of our Services. If you encounter any accessibility barriers, have suggestions, or require assistance, please contact us.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                To report an accessibility issue, please provide:
+                When reporting an accessibility issue, please provide:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>A description of the issue</li>
-                <li>The URL or section of the Services where the issue occurred</li>
-                <li>Your contact information (optional, for follow-up)</li>
+                <li>A clear description of the issue encountered.</li>
+                <li>The specific URL or section of our Services where the issue occurred.</li>
+                <li>The type of assistive technology you were using (if any, e.g., screen reader, browser version).</li>
+                <li>Your contact information (optional, but helpful for follow-up).</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300">
-                We aim to respond to accessibility feedback within 5 business days.
+                We aim to acknowledge and respond to accessibility-related feedback and inquiries in a timely manner.
               </p>
             </motion.div>
 
@@ -170,7 +171,7 @@ export default function Accessibility() {
                 Third-Party Content
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Our Services may include links to third-party websites or content that we do not control. We are not responsible for the accessibility of third-party content. We encourage users to contact third-party providers directly for accessibility concerns related to their services.
+                Our Services may include links to or integrations with third-party websites, applications, or content that are not under our direct control. While we encourage third-party providers to make their content accessible, we cannot guarantee the accessibility of such third-party content. We advise users to review the accessibility statements of these third parties.
               </p>
             </motion.div>
 
@@ -180,13 +181,13 @@ export default function Accessibility() {
                 Ongoing Improvements
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Accessibility is an ongoing process. We are continuously working to enhance the usability and accessibility of our Services by:
+                Digital accessibility is an ongoing commitment and a continuous journey. We are dedicated to regularly reviewing and enhancing the usability and accessibility of our Services by:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>Updating our design and development practices</li>
-                <li>Incorporating user feedback into our accessibility roadmap</li>
-                <li>Monitoring changes in accessibility standards and guidelines</li>
-                <li>Investing in accessibility training for our team</li>
+                <li>Keeping abreast of evolving accessibility standards and guidelines.</li>
+                <li>Incorporating user feedback and technological advancements into our accessibility roadmap.</li>
+                <li>Periodically reviewing and updating our internal accessibility policies and practices.</li>
+                <li>Continuing to invest in accessibility training and awareness for our team.</li>
               </ul>
             </motion.div>
 
@@ -196,13 +197,13 @@ export default function Accessibility() {
                 Contact Us
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                If you have questions, feedback, or need assistance with accessibility, please reach out to us:
+                If you have questions, feedback, or need assistance regarding the accessibility of our Services, please reach out to us:
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-100 dark:border-blue-800/50">
-                <p className="text-gray-800 dark:text-gray-200 font-medium">ClinIQ Health Technologies Pvt. Ltd.</p>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: accessibility@ClinIQ.ai</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">Accessibility Team, ClinIQ Health Technologies Pvt. Ltd.</p>
+                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: teamcodexsupport@gmail.com (Please include "Accessibility" in the subject line)</p>
                 <p className="text-gray-600 dark:text-gray-300">Phone: +91 9876543210</p>
-                <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District Bangalore Karnataka 560001 India</p>
+                <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District, Bangalore, Karnataka 560001, India</p>
               </div>
             </motion.div>
           </div>
@@ -215,14 +216,15 @@ export default function Accessibility() {
             animate={{ opacity: 0.5, x: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-           
+           {/* Optional: Add a subtle decorative icon here if desired */}
+           {/* <UserGroupIcon className="w-16 h-16 text-blue-300 dark:text-blue-700 absolute top-10 left-10 animate-pulse opacity-30" /> */}
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 0.5, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            <GlobeAltIcon className="w-20 h-20 text-blue-300 dark:text-indigo-700 absolute bottom-10 right-10 rotate-12" />
+            <GlobeAltIcon className="w-20 h-20 text-blue-300 dark:text-indigo-700 absolute bottom-10 right-10 rotate-12 opacity-30" />
           </motion.div>
         </div>
         </div>

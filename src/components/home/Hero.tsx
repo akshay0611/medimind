@@ -267,7 +267,7 @@ const Hero: React.FC = () => {
                 <Shield className="w-6 h-6 text-indigo-300" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold mb-1">100% Secure</h3>
-              <p className="text-center text-sm text-blue-50/80">HIPAA-compliant & encrypted data</p>
+             <p className="text-center text-sm text-green-50/80">DPDP & DISHA-compliant, end-to-end encrypted</p>
             </motion.div>
             
             <motion.div 

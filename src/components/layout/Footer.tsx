@@ -15,7 +15,6 @@ import {
   Globe,
   AlertCircle
 } from 'lucide-react';
-import ClinIQLogo from '../common/ClinIQLogo';
 import Button from '../common/Button';
 
 const Footer: React.FC = () => {
@@ -85,23 +84,28 @@ const Footer: React.FC = () => {
          
           <motion.div variants={itemVariants} className="lg:col-span-4">
             <Link to="/" className="group flex items-center mb-5">
-              <div className="flex items-center justify-center w-12 h-12 mr-3 bg-white/5 backdrop-blur-sm rounded-xl group-hover:bg-white/10 transition-colors">
-                <motion.div 
-                  whileHover={{ rotate: [0, -5, 5, -5, 0] }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <ClinIQLogo size={30} />
-                </motion.div>
-              </div>
-              <div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-primary-400 text-transparent bg-clip-text">ClinIQ</span>
-                <motion.span 
-                  className="block h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-blue-400 to-primary-400 transition-all duration-300"
-                  initial={{ width: 0 }}
-                  whileHover={{ width: "100%" }}
-                />
-              </div>
-            </Link>
+  <motion.div 
+    className="w-16 h-16 mr-3" 
+    whileHover={{ rotate: [0, -5, 5, -5, 0] }}
+    transition={{ duration: 0.5 }}
+  >
+    <img 
+      src="/ClinIQ_Logo.png" 
+      alt="ClinIQ Logo" 
+      className="w-full h-full object-contain" 
+    />
+  </motion.div>
+
+  <div>
+    <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-primary-400 text-transparent bg-clip-text">ClinIQ</span>
+    <motion.span 
+      className="block h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-blue-400 to-primary-400 transition-all duration-300"
+      initial={{ width: 0 }}
+      whileHover={{ width: "100%" }}
+    />
+  </div>
+</Link>
+
             
             <p className="text-neutral-300 mb-6 leading-relaxed">
               Your trusted partner for reliable health insights and connecting with healthcare professionals. We combine AI technology with medical expertise to provide accurate information when you need it most.

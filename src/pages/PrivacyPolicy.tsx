@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheckIcon, LockClosedIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
@@ -51,7 +50,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            How ClinIQ protects your data and respects your privacy
+            How ClinIQ protects your data and respects your privacy in compliance with Indian regulations.
           </p>
         </motion.div>
 
@@ -74,7 +73,7 @@ export default function PrivacyPolicy() {
                 <DocumentTextIcon className="w-6 h-6 text-blue-500 mr-3" />
                 <span className="text-blue-700 dark:text-blue-300 font-medium">Last Updated:</span>
               </div>
-              <span className="text-blue-700 dark:text-blue-300 font-medium">May 20, 2025</span>
+              <span className="text-blue-700 dark:text-blue-300 font-medium">June 10, 2025</span>
             </motion.div>
 
             
@@ -84,10 +83,10 @@ export default function PrivacyPolicy() {
                 Introduction
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                ClinIQ ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by ClinIQ. This Privacy Policy applies to our website, mobile applications, and related services (collectively, our "Services").
+                ClinIQ ("we", "our", or "us"), operated by ClinIQ Health Technologies Pvt. Ltd., is committed to protecting your privacy. This Privacy Policy explains how your personal information, including sensitive personal data, is collected, used, and disclosed by ClinIQ in compliance with applicable Indian laws. This Privacy Policy applies to our website, mobile applications, and related services (collectively, our "Services").
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                By accessing or using our Services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy.
+                By accessing or using our Services, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and consent to the same.
               </p>
             </motion.div>
 
@@ -100,9 +99,9 @@ export default function PrivacyPolicy() {
                 We collect several different types of information for various purposes to provide and improve our Services to you:
               </p>
               
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mt-6 mb-3">Personal Information</h3>
+              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mt-6 mb-3">Personal Information and Sensitive Personal Data</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-3">
-                While using our Services, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. This may include, but is not limited to:
+                While using our Services, we may ask you to provide us with certain personally identifiable information ("Personal Information") and, where necessary for healthcare services, sensitive personal data or information ("SPDI") as defined under Indian law. This may include, but is not limited to:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
                 <li>Full name</li>
@@ -110,8 +109,9 @@ export default function PrivacyPolicy() {
                 <li>Phone number</li>
                 <li>Date of birth</li>
                 <li>Address and location information</li>
-                <li>Medical history and health information</li>
-                <li>Insurance information</li>
+                <li>Medical history and health information (considered SPDI)</li>
+                <li>Insurance information (if applicable)</li>
+                <li>Other information you voluntarily provide</li>
               </ul>
 
               <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mt-6 mb-3">Usage Data</h3>
@@ -126,17 +126,18 @@ export default function PrivacyPolicy() {
                 How We Use Your Information
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We use the collected data for various purposes:
+                We use the collected data for various purposes, based on your consent and as permitted by law:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>To provide and maintain our Services</li>
+                <li>To provide and maintain our Services, including facilitating medical consultations</li>
                 <li>To notify you about changes to our Services</li>
-                <li>To provide customer support</li>
+                <li>To provide customer support and respond to your queries</li>
                 <li>To gather analysis or valuable information so that we can improve our Services</li>
                 <li>To monitor the usage of our Services</li>
-                <li>To detect, prevent and address technical issues</li>
-                <li>To process and manage appointments and medical consultations</li>
-                <li>To provide personalized health insights and recommendations</li>
+                <li>To detect, prevent and address technical issues and security incidents</li>
+                <li>To process and manage appointments</li>
+                <li>To provide personalized health insights and recommendations (where you opt-in)</li>
+                <li>To comply with legal obligations and regulatory requirements in India</li>
               </ul>
             </motion.div>
 
@@ -146,17 +147,17 @@ export default function PrivacyPolicy() {
                 Data Security
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+                The security of your data is important to us. We strive to use commercially acceptable and legally mandated means to protect your Personal Information and SPDI. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee its absolute security.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We implement a variety of security measures to maintain the safety of your personal information:
+                We implement a variety of security measures to maintain the safety of your personal information, in line with industry best practices and legal requirements in India:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li>All sensitive information is transmitted via Secure Socket Layer (SSL) technology</li>
-                <li>All data is stored in secure, encrypted databases</li>
-                <li>Access to personal information is restricted to authorized personnel only</li>
-                <li>Regular security audits and assessments</li>
-                <li>Compliance with HIPAA and other relevant healthcare privacy regulations</li>
+                <li>All sensitive information (such as health data) is transmitted via Secure Socket Layer (SSL) technology or other strong encryption methods.</li>
+                <li>All personal data is stored in secure, and where appropriate, encrypted databases.</li>
+                <li>Access to personal information is restricted to authorized personnel on a need-to-know basis.</li>
+                <li>We conduct regular security reviews and assessments.</li>
+                <li>We strive to be compliant with applicable Indian data protection laws, including the Information Technology Act, 2000, and its rules (such as the Information Technology (Reasonable security practices and procedures and sensitive personal data or information) Rules, 2011 – "SPDI Rules"), and the Digital Personal Data Protection Act, 2023 ("DPDP Act").</li>
               </ul>
             </motion.div>
 
@@ -166,14 +167,14 @@ export default function PrivacyPolicy() {
                 Sharing Your Personal Information
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We may share your personal information in the following situations:
+                We may share your personal information in the following situations, consistent with your consent and applicable law:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li><span className="font-semibold">With Healthcare Providers:</span> To facilitate appointments, consultations, and medical services</li>
-                <li><span className="font-semibold">With Service Providers:</span> To perform service-related services or assist in analyzing how our Services are used</li>
-                <li><span className="font-semibold">For Business Transfers:</span> In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition</li>
-                <li><span className="font-semibold">With Your Consent:</span> When you have provided consent to share your information</li>
-                <li><span className="font-semibold">For Legal Requirements:</span> Where required by law or to protect our rights</li>
+                <li><span className="font-semibold">With Healthcare Providers:</span> To facilitate appointments, consultations, and medical services you request.</li>
+                <li><span className="font-semibold">With Service Providers:</span> We may employ third-party companies and individuals to facilitate our Services, provide Services on our behalf, or assist us in analyzing how our Services are used. These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</li>
+                <li><span className="font-semibold">For Business Transfers:</span> In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+                <li><span className="font-semibold">With Your Consent:</span> We may disclose your personal information for any other purpose with your explicit consent.</li>
+                <li><span className="font-semibold">For Legal Requirements:</span> We may disclose your Personal Information where required by law, or if we believe in good faith that such action is necessary to comply with a legal obligation, protect and defend our rights or property, prevent or investigate possible wrongdoing in connection with the Service, protect the personal safety of users of the Service or the public, or protect against legal liability.</li>
               </ul>
             </motion.div>
 
@@ -183,18 +184,16 @@ export default function PrivacyPolicy() {
                 Your Data Protection Rights
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Depending on your location, you may have certain rights regarding your personal information:
+                Under applicable Indian law, including the Digital Personal Data Protection Act, 2023, you have certain rights regarding your personal information. These may include:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li><span className="font-semibold">The right to access</span> – You have the right to request copies of your personal data</li>
-                <li><span className="font-semibold">The right to rectification</span> – You have the right to request that we correct any information you believe is inaccurate</li>
-                <li><span className="font-semibold">The right to erasure</span> – You have the right to request that we erase your personal data, under certain conditions</li>
-                <li><span className="font-semibold">The right to restrict processing</span> – You have the right to request that we restrict the processing of your personal data, under certain conditions</li>
-                <li><span className="font-semibold">The right to data portability</span> – You have the right to request that we transfer the data we've collected to another organization, under certain conditions</li>
-                <li><span className="font-semibold">The right to object</span> – You have the right to object to our processing of your personal data, under certain conditions</li>
+                <li><span className="font-semibold">The right to access</span> – You have the right to obtain confirmation and access to your personal data that we process, and other supporting information.</li>
+                <li><span className="font-semibold">The right to correction and erasure</span> – You have the right to request correction of inaccurate or misleading personal data, completion of incomplete data, updating of data, and erasure of personal data that is no longer necessary for the purpose it was collected or is otherwise not required to be retained by law.</li>
+                <li><span className="font-semibold">The right to withdraw consent</span> – Where the processing of your personal data is based on your consent, you have the right to withdraw your consent at any time. The withdrawal of consent will not affect the lawfulness of processing based on consent before its withdrawal.</li>
+                <li><span className="font-semibold">The right to grievance redressal</span> – You have the right to an easily accessible means of registering a grievance with us regarding our data processing activities or any alleged non-compliance with applicable law.</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300">
-                If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email: privacy@ClinIQ.ai
+                To exercise any of these rights, or if you have any questions or grievances regarding the processing of your personal information, please contact our Grievance Officer using the details provided in the "Contact Us" section. We will respond to your requests and grievances in accordance with applicable Indian law.
               </p>
             </motion.div>
 
@@ -207,16 +206,16 @@ export default function PrivacyPolicy() {
                 We use cookies and similar tracking technologies to track activity on our Services and store certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Services.
+                You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Services. We will seek your consent for non-essential cookies as required by law.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                Examples of Cookies we use:
+                Examples of Cookies we may use:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-4 ml-4">
-                <li><span className="font-semibold">Session Cookies:</span> To operate our Services</li>
-                <li><span className="font-semibold">Preference Cookies:</span> To remember your preferences and various settings</li>
-                <li><span className="font-semibold">Security Cookies:</span> For security purposes</li>
-                <li><span className="font-semibold">Analytics Cookies:</span> To understand how you use our Services</li>
+                <li><span className="font-semibold">Session Cookies:</span> To operate our Services.</li>
+                <li><span className="font-semibold">Preference Cookies:</span> To remember your preferences and various settings.</li>
+                <li><span className="font-semibold">Security Cookies:</span> For security purposes.</li>
+                <li><span className="font-semibold">Analytics Cookies:</span> To understand how you use our Services, subject to your consent where applicable.</li>
               </ul>
             </motion.div>
 
@@ -226,10 +225,10 @@ export default function PrivacyPolicy() {
                 Children's Privacy
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Our Services are not intended for use by children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us.
+                Our Services are not intended for use by individuals under the age of 18 ("Children") without verifiable parental consent. We do not knowingly collect personally identifiable information from anyone under the age of 18 without such consent. As per the DPDP Act, 2023, processing children's data requires verifiable parental consent and prohibits processing that is likely to cause harm to a child.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
-                If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.
+                If you are a parent or guardian and you are aware that your Child has provided us with Personal Data without your consent (or if you wish to withdraw consent), please contact us. If we become aware that we have collected Personal Data from Children without appropriate verifiable parental consent, we take steps to remove that information from our servers or obtain necessary consents.
               </p>
             </motion.div>
 
@@ -239,7 +238,7 @@ export default function PrivacyPolicy() {
                 Changes to This Privacy Policy
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy.
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy. We may also notify you through email or other direct communication channels where feasible and appropriate.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
                 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
@@ -249,16 +248,16 @@ export default function PrivacyPolicy() {
            
             <motion.div variants={itemVariants}>
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Contact Us
+                Contact Us / Grievance Officer
               </h2>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                If you have any questions about this Privacy Policy, please contact us:
+                If you have any questions about this Privacy Policy, wish to exercise your rights, or have any grievances, please contact our Grievance Officer:
               </p>
               <div className="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6 border border-blue-100 dark:border-blue-800/50">
-                <p className="text-gray-800 dark:text-gray-200 font-medium">ClinIQ Health Technologies Pvt. Ltd.</p>
-                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: privacy@ClinIQ.ai</p>
+                <p className="text-gray-800 dark:text-gray-200 font-medium">Grievance Officer, ClinIQ Health Technologies Pvt. Ltd.</p>
+                <p className="text-gray-600 dark:text-gray-300 mt-2">Email: teamcodexsupport@gmail.com (Please mention "Privacy Grievance" in the subject line)</p>
                 <p className="text-gray-600 dark:text-gray-300">Phone: +91 9876543210</p>
-                   <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District Bangalore Karnataka 560001 India</p>
+                <p className="text-gray-600 dark:text-gray-300">Address: 123 Health Avenue, Medical District, Bangalore, Karnataka 560001, India</p>
               </div>
             </motion.div>
           </div>

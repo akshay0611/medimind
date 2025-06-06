@@ -44,6 +44,16 @@ export interface SymptomResult {
     required: boolean;
     reason?: string;
   };  
+  diet?: {
+    recommendedFoods: string[];
+    foodsToAvoid: string[];
+    hydration: string;
+  };
+  medications?: {
+    recommended: string[];
+    supplements: string[];
+    precautions: string;
+  };
 }
 
 export interface Condition {

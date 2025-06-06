@@ -187,6 +187,160 @@ export const mockDoctors: Doctor[] = [
     patientCount: 2600,
     reviews: 135,
     isVerified: true
+  },
+  {
+    id: "5",
+    name: "Dr. Rohan Gupta",
+    specialization: "Neurology",
+    location: "Bangalore",
+    rating: 4.8,
+    photoUrl: "https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg", // Different photo
+    availability: ["Monday", "Wednesday", "Friday"],
+    isAvailableToday: true,
+    experience: 10,
+    patientCount: 1900,
+    reviews: 105,
+    isVerified: true
+  },
+  {
+    id: "6",
+    name: "Dr. Priya Singh",
+    specialization: "Dermatology",
+    location: "Hyderabad",
+    rating: 4.6,
+    photoUrl: "https://images.pexels.com/photos/4167542/pexels-photo-4167542.jpeg", // Different photo
+    availability: ["Tuesday", "Thursday", "Saturday"],
+    isAvailableToday: false,
+    experience: 8,
+    patientCount: 1750,
+    reviews: 90,
+    isVerified: true
+  },
+  {
+    id: "7",
+    name: "Dr. Arjun Desai",
+    specialization: "ENT (Otolaryngology)",
+    location: "Pune",
+    rating: 4.7,
+    photoUrl: "https://images.pexels.com/photos/5794047/pexels-photo-5794047.jpeg", // Different photo
+    availability: ["Monday", "Thursday"],
+    isAvailableToday: true,
+    experience: 11,
+    patientCount: 2100,
+    reviews: 100,
+    isVerified: true
+  },
+  {
+    id: "8",
+    name: "Dr. Sneha Reddy",
+    specialization: "Pulmonology",
+    location: "Ahmedabad",
+    rating: 4.8,
+    photoUrl: "https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg", // Different photo
+    availability: ["Wednesday", "Friday", "Saturday"],
+    isAvailableToday: true,
+    experience: 9,
+    patientCount: 1850,
+    reviews: 98,
+    isVerified: true
+  },
+  {
+    id: "9",
+    name: "Dr. Vikram Patel",
+    specialization: "Gastroenterology",
+    location: "Jaipur",
+    rating: 4.5,
+    photoUrl: "https://images.pexels.com/photos/5206931/pexels-photo-5206931.jpeg", // Different photo
+    availability: ["Tuesday", "Thursday"],
+    isAvailableToday: false,
+    experience: 13,
+    patientCount: 2200,
+    reviews: 115,
+    isVerified: true
+  },
+  {
+    id: "10",
+    name: "Dr. Sunita Joshi",
+    specialization: "Endocrinology",
+    location: "Lucknow",
+    rating: 4.9,
+    photoUrl: "https://images.pexels.com/photos/5214996/pexels-photo-5214996.jpeg", // Different photo
+    availability: ["Monday", "Wednesday"],
+    isAvailableToday: true,
+    experience: 14,
+    patientCount: 2400,
+    reviews: 125,
+    isVerified: true
+  },
+  {
+    id: "11",
+    name: "Dr. Alok Verma",
+    specialization: "Orthopedics",
+    location: "Chandigarh",
+    rating: 4.6,
+    photoUrl: "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg", // Different photo
+    availability: ["Tuesday", "Friday", "Saturday"],
+    isAvailableToday: false,
+    experience: 10,
+    patientCount: 2000,
+    reviews: 102,
+    isVerified: true
+  },
+  {
+    id: "12",
+    name: "Dr. Fatima Khan",
+    specialization: "Psychiatry",
+    location: "Bhopal",
+    rating: 4.7,
+    photoUrl: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg", // Different photo
+    availability: ["Monday", "Thursday"],
+    isAvailableToday: true,
+    experience: 8,
+    patientCount: 1600,
+    reviews: 85,
+    isVerified: true
+  },
+   {
+    id: "13",
+    name: "Dr. Rajesh Kumar",
+    specialization: "Emergency Medicine", 
+    location: "Mumbai",
+    rating: 4.6,
+    photoUrl: "https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg",
+    availability: ["Tuesday", "Wednesday", "Friday"],
+    isAvailableToday: false,
+    experience: 9,
+    patientCount: 1950,
+    reviews: 100,
+    isVerified: true
+  },
+  {
+    id: "14",
+    name: "Dr. Anita Desai",
+    specialization: "Internal Medicine",
+    location: "Delhi",
+    rating: 4.8,
+    photoUrl: "https://images.pexels.com/photos/5998461/pexels-photo-5998461.jpeg",
+    availability: ["Monday", "Thursday", "Saturday"],
+    isAvailableToday: true,
+    experience: 11,
+    patientCount: 2150,
+    reviews: 112,
+    isVerified: true
+  },
+  {
+    id: "15",
+    name: "Dr. Sameer Shah",
+    specialization: "Neurology", 
+    location: "Chennai",
+    rating: 4.7,
+    photoUrl: "https://images.pexels.com/photos/5234534/pexels-photo-5234534.jpeg",
+    availability: ["Tuesday", "Friday"],
+    isAvailableToday: false,
+    experience: 12,
+    patientCount: 2050,
+    reviews: 108,
+    isVerified: true
   }
 ];
 

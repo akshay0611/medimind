@@ -19,7 +19,7 @@
     "framer-motion": "^11.1.6",
     "jspdf": "^3.0.1",
     "jspdf-autotable": "^5.0.2",
-    "lucide-react": "^0.344.0",
+    "lucide-react": "^0.513.0",
     "mongodb": "^6.16.0",
     "react": "^18.3.1",
     "react-calendar": "^4.8.0",

@@ -194,7 +194,123 @@ export default class PDFExportService {
       const splitConsultation = doc.splitTextToSize(consultationText, contentWidth);
       doc.text(splitConsultation, margin, yPos);
       yPos += (splitConsultation.length * 5) + 15;
-      
+
+      // Diet Recommendations Section
+      if (yPos > 250) {
+        doc.addPage();
+        yPos = 20;
+      }
+
+      // Diet Recommendations
+      yPos += 5;
+      doc.setFontSize(14);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Dietary Recommendations:', margin, yPos);
+      yPos += 10;
+
+      // Recommended Foods
+      doc.setFontSize(12);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Recommended Foods:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const recommendedFoods = result.diet?.recommendedFoods || ['Fresh fruits and vegetables', 'Whole grains', 'Lean proteins'];
+      recommendedFoods.forEach((food, index) => {
+        if (yPos > 270) {
+          doc.addPage();
+          yPos = 20;
+        }
+        doc.text(`• ${food}`, margin + 3, yPos);
+        yPos += 7;
+      });
+
+      // Foods to Avoid
+      yPos += 5;
+      doc.setFont('helvetica', 'bold');
+      doc.text('Foods to Avoid:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const foodsToAvoid = result.diet?.foodsToAvoid || ['Processed foods', 'High-sugar items', 'Excessive caffeine'];
+      foodsToAvoid.forEach((food, index) => {
+        if (yPos > 270) {
+          doc.addPage();
+          yPos = 20;
+        }
+        doc.text(`• ${food}`, margin + 3, yPos);
+        yPos += 7;
+      });
+
+      // Hydration
+      yPos += 5;
+      doc.setFont('helvetica', 'bold');
+      doc.text('Hydration:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const hydration = result.diet?.hydration || 'Drink plenty of water throughout the day. Aim for 8-10 glasses daily.';
+      const splitHydration = doc.splitTextToSize(hydration, contentWidth);
+      doc.text(splitHydration, margin, yPos);
+      yPos += (splitHydration.length * 5) + 10;
+
+      // Medications Section
+      if (yPos > 250) {
+        doc.addPage();
+        yPos = 20;
+      }
+
+      doc.setFontSize(14);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Medications & Supplements:', margin, yPos);
+      yPos += 10;
+
+      // Recommended Medications
+      doc.setFontSize(12);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Recommended Medications:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const recommendedMeds = result.medications?.recommended || ['Over-the-counter pain relievers', 'Antihistamines if needed'];
+      recommendedMeds.forEach((med, index) => {
+        if (yPos > 270) {
+          doc.addPage();
+          yPos = 20;
+        }
+        doc.text(`• ${med}`, margin + 3, yPos);
+        yPos += 7;
+      });
+
+      // Supplements
+      yPos += 5;
+      doc.setFont('helvetica', 'bold');
+      doc.text('Supplements:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const supplements = result.medications?.supplements || ['Vitamin C', 'Zinc', 'Probiotics'];
+      supplements.forEach((supp, index) => {
+        if (yPos > 270) {
+          doc.addPage();
+          yPos = 20;
+        }
+        doc.text(`• ${supp}`, margin + 3, yPos);
+        yPos += 7;
+      });
+
+      // Precautions
+      yPos += 5;
+      doc.setFont('helvetica', 'bold');
+      doc.text('Precautions:', margin, yPos);
+      yPos += 7;
+
+      doc.setFont('helvetica', 'normal');
+      const precautions = result.medications?.precautions || 'Always read medication labels carefully and follow dosage instructions. Report any adverse reactions to your healthcare provider immediately.';
+      const splitPrecautions = doc.splitTextToSize(precautions, contentWidth);
+      doc.text(splitPrecautions, margin, yPos);
+      yPos += (splitPrecautions.length * 5) + 15;
+
       // Disclaimer
       if (yPos > 250) {
         doc.addPage();

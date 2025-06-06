@@ -6,11 +6,19 @@ import Button from '../common/Button';
 
 const Hero: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
-  
+  const [currentTitle, setCurrentTitle] = useState(0);
+
+  const titles = [
+    "Personalized Care",
+    "Expert Doctors",
+    "24/7 Support",
+    "AI-Powered Analysis",
+    "Comprehensive Solutions"
+  ];
+
   useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout>;
-    
+
     const handleMouseMove = (e: MouseEvent) => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
@@ -18,9 +26,9 @@ const Hero: React.FC = () => {
           x: e.clientX / window.innerWidth,
           y: e.clientY / window.innerHeight,
         });
-      }, 10); 
+      }, 10);
     };
-    
+
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -28,7 +36,16 @@ const Hero: React.FC = () => {
     };
   }, []);
 
-  
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTitle((prev) => (prev + 1) % titles.length);
+    }, 2000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+
   const animations = useMemo(() => {
     return {
       containerVariants: {
@@ -55,8 +72,8 @@ const Hero: React.FC = () => {
         transition: {
           duration: 3,
           repeat: Infinity,
-          ease: "easeInOut"
-        }
+          ease: "easeInOut",
+        },
       },
       floatingAnimation: {
         y: [0, -15, 0],
@@ -64,20 +81,25 @@ const Hero: React.FC = () => {
           duration: 5,
           repeat: Infinity,
           repeatType: "reverse" as const,
-          ease: "easeInOut"
-        }
-      }
+          ease: "easeInOut",
+        },
+      },
+      textCycleVariants: {
+        hidden: { y: 50, opacity: 0 },
+        visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 100, damping: 20 } },
+        exit: { y: -50, opacity: 0, transition: { type: "spring", stiffness: 100, damping: 20 } },
+      },
     };
   }, []);
 
   return (
-    <section 
+    <section
       className="relative bg-gradient-to-br from-primary-700 via-primary-800 to-primary-900 text-white overflow-hidden min-h-screen flex items-center justify-center"
       aria-label="Hero Section"
     >
      
       <div className="absolute inset-0 overflow-hidden">
-        <motion.div 
+        <motion.div
           className="absolute h-64 w-64 rounded-full bg-blue-500/20 blur-3xl"
           animate={animations.pulseAnimation}
           style={{
@@ -86,11 +108,11 @@ const Hero: React.FC = () => {
             transform: `translate(${mousePosition.x * -20}px, ${mousePosition.y * -20}px)`,
           }}
         />
-        <motion.div 
+        <motion.div
           className="absolute h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl"
           animate={{
             ...animations.pulseAnimation,
-            transition: { ...animations.pulseAnimation.transition, delay: 1 }
+            transition: { ...animations.pulseAnimation.transition, delay: 1 },
           }}
           style={{
             bottom: '10%',
@@ -98,11 +120,11 @@ const Hero: React.FC = () => {
             transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 20}px)`,
           }}
         />
-        <motion.div 
+        <motion.div
           className="absolute h-80 w-80 rounded-full bg-teal-400/10 blur-3xl"
           animate={{
             ...animations.pulseAnimation,
-            transition: { ...animations.pulseAnimation.transition, delay: 0.5 }
+            transition: { ...animations.pulseAnimation.transition, delay: 0.5 },
           }}
           style={{
             top: '60%',
@@ -111,53 +133,44 @@ const Hero: React.FC = () => {
           }}
         />
       </div>
-      
+
      
       <div className="absolute inset-0 bg-grid-white/[0.03] bg-[length:40px_40px]" />
-      
+
      
       <div className="absolute inset-0">
-        <motion.div 
-          animate={animations.floatingAnimation} 
+        <motion.div
+          animate={animations.floatingAnimation}
           className="absolute top-20 left-10 text-blue-300/20"
           aria-hidden="true"
         >
           <Stethoscope size={140} strokeWidth={1} />
         </motion.div>
-        <motion.div 
+        <motion.div
           animate={{
             ...animations.floatingAnimation,
-            transition: { 
-              ...animations.floatingAnimation.transition, 
-              delay: 1 
-            }
-          }} 
+            transition: { ...animations.floatingAnimation.transition, delay: 1 },
+          }}
           className="absolute bottom-20 right-10 text-blue-400/20"
           aria-hidden="true"
         >
           <Activity size={180} strokeWidth={1} />
         </motion.div>
-        <motion.div 
+        <motion.div
           animate={{
             ...animations.floatingAnimation,
-            transition: { 
-              ...animations.floatingAnimation.transition, 
-              delay: 0.5 
-            }
-          }} 
+            transition: { ...animations.floatingAnimation.transition, delay: 0.5 },
+          }}
           className="absolute top-40 right-20 text-teal-300/20"
           aria-hidden="true"
         >
           <Shield size={120} strokeWidth={1} />
         </motion.div>
-        <motion.div 
+        <motion.div
           animate={{
             ...animations.floatingAnimation,
-            transition: { 
-              ...animations.floatingAnimation.transition, 
-              delay: 1.5 
-            }
-          }} 
+            transition: { ...animations.floatingAnimation.transition, delay: 1.5 },
+          }}
           className="absolute bottom-40 left-20 text-indigo-300/20"
           aria-hidden="true"
         >
@@ -174,37 +187,46 @@ const Hero: React.FC = () => {
           animate="visible"
         >
          
-          <motion.div 
-            className="flex justify-center mb-8"
-            variants={animations.itemVariants}
-          >
+          <motion.div className="flex justify-center mb-8" variants={animations.itemVariants}>
             <div className="inline-flex items-center bg-gradient-to-r from-blue-500/20 to-indigo-500/20 backdrop-blur-md px-6 py-3 rounded-full border border-blue-300/20 shadow-lg shadow-blue-500/10">
-              <Award className="h-5 w-5 mr-2 text-yellow-300" aria-hidden="true" /> 
+              <Award className="h-5 w-5 mr-2 text-yellow-300" aria-hidden="true" />
               <span className="font-medium text-sm text-blue-50">Rated #1 Healthcare AI Platform of 2025</span>
             </div>
           </motion.div>
 
          
-          <motion.h1
-            className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight drop-shadow-md"
+          <motion.div
+            className="text-center mb-6"
             variants={animations.itemVariants}
           >
-            Get <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-300 relative inline-block">
-              Trusted Health
-              <span className="absolute -inset-1 blur-xl bg-blue-400/20 rounded-lg -z-10"></span>
-            </span> Insights Instantly
-          </motion.h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight drop-shadow-md mb-4">
+              Your Health, Our Priority
+            </h1>
+            <motion.h2
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-300"
+            >
+              <motion.span
+                key={currentTitle}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="inline-block"
+              >
+                {titles[currentTitle]}
+              </motion.span>
+            </motion.h2>
+          </motion.div>
 
-          
+         
           <motion.p
             className="text-center text-lg md:text-xl text-blue-50/90 mb-12 max-w-2xl mx-auto leading-relaxed"
             variants={animations.itemVariants}
           >
-            ClinIQ combines medical expertise with AI to provide reliable symptom analysis and
-            connect you with healthcare professionals when you need them most.
+            Experience seamless healthcare with AI-powered symptom analysis and instant connections to medical professionals.
           </motion.p>
 
-        
+         
           <motion.div
             className="flex flex-col sm:flex-row gap-5 justify-center mb-16"
             variants={animations.itemVariants}
@@ -214,7 +236,7 @@ const Hero: React.FC = () => {
                 size="lg"
                 variant="secondary"
                 leftIcon={<Stethoscope size={20} aria-hidden="true" />}
-                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white shadow-lg shadow-blue-600/30 transition-all duration-300 hover:shadow-xl hover:scale-105 px-6 py-4 md:px-8 md:py-6 rounded-xl border-0 w-full sm:w-auto text-center"
+                className="bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-300 hover:to-blue-500 text-white shadow-lg shadow-blue-600/30 transition-all duration-300 hover:shadow-xl hover:scale-105 px-6 py-4 md:px-8 md:py-6 rounded-xl border-0 w-full sm:w-auto text-center"
               >
                 Check Symptoms Now
               </Button>
@@ -236,7 +258,7 @@ const Hero: React.FC = () => {
             className="mt-16 pt-10 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-8"
             variants={animations.itemVariants}
           >
-            <motion.div 
+            <motion.div
               className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg"
               whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
               transition={{ duration: 0.2 }}
@@ -257,8 +279,8 @@ const Hero: React.FC = () => {
               </div>
               <p className="text-center font-medium">10,000+ satisfied users</p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg"
               whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
               transition={{ duration: 0.2 }}
@@ -267,10 +289,10 @@ const Hero: React.FC = () => {
                 <Shield className="w-6 h-6 text-indigo-300" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-semibold mb-1">100% Secure</h3>
-             <p className="text-center text-sm text-green-50/80">DPDP & DISHA-compliant, end-to-end encrypted</p>
+              <p className="text-center text-sm text-green-50/80">DPDP & DISHA-compliant, end-to-end encrypted</p>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="flex flex-col items-center justify-center p-6 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg"
               whileHover={{ scale: 1.05, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
               transition={{ duration: 0.2 }}

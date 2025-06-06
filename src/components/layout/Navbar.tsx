@@ -12,10 +12,11 @@ import {
   Stethoscope, 
   Search, 
   Users,
-  LayoutDashboard,
+  // LayoutDashboard,
   HelpCircle,
   MessageSquare,
-  Info
+  Info,
+  Hospital
 } from 'lucide-react';
 import Button from '../common/Button';
 import { useAuth } from '../../context/AuthContext';
@@ -60,7 +61,7 @@ const Navbar: React.FC = () => {
     { name: 'About', path: '/about', icon: <Info size={18} /> },
     { name: 'Symptom Checker', path: '/symptom-check', icon: <Stethoscope size={18} /> },
     { name: 'Find Doctors', path: '/doctors', icon: <Users size={18} /> },
-    { name: 'Dashboard', path: '/dashboard', icon: <LayoutDashboard size={18} /> },
+    { name: 'Hospitals', path: '/hospitals', icon: <Hospital size={18} /> },
     { name: 'FAQ', path: '/faq', icon: <HelpCircle size={18} /> },
     { name: 'Contact', path: '/contact', icon: <MessageSquare size={18} /> },
   ];

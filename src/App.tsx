@@ -14,6 +14,7 @@ import SymptomChecker from './pages/SymptomChecker';
 import Doctors from './pages/Doctors';
 import Appointment from './pages/Appointment';
 import Dashboard from './pages/Dashboard';
+import Hospitals from './pages/Hospitals';
 import Faq from './pages/FAQ';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -46,6 +47,7 @@ function App() {
                 <Route path="/doctors" element={<Doctors />} />
                 <Route path="/appointment/:id" element={<Appointment />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/hospitals" element={<Hospitals />} />
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/about" element={<About />} />

@@ -10,6 +10,16 @@ interface GeminiResponse {
   recommendations: string[];
   requiresAttention: boolean;
   disclaimer: string;
+  diet: {
+    recommendedFoods: string[];
+    foodsToAvoid: string[];
+    hydration: string;
+  };
+  medications: {
+    recommended: string[];
+    supplements: string[];
+    precautions: string;
+  };
 }
 
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
@@ -60,7 +70,29 @@ class GeminiSymptomService {
           "Recommendation 2"
         ],
         "requiresAttention": true/false, // whether medical attention is recommended
-        "disclaimer": "Important medical disclaimer"
+        "disclaimer": "Important medical disclaimer",
+        "diet": {
+          "recommendedFoods": [
+            "Food item 1",
+            "Food item 2"
+          ],
+          "foodsToAvoid": [
+            "Food item 1",
+            "Food item 2"
+          ],
+          "hydration": "Specific hydration recommendations"
+        },
+        "medications": {
+          "recommended": [
+            "Medication 1",
+            "Medication 2"
+          ],
+          "supplements": [
+            "Supplement 1",
+            "Supplement 2"
+          ],
+          "precautions": "Important medication precautions"
+        }
       }
       
       Important guidelines:
@@ -68,7 +100,9 @@ class GeminiSymptomService {
       2. Be accurate but avoid causing unnecessary alarm
       3. Include a strong medical disclaimer
       4. For emergency conditions (difficulty breathing, chest pain, stroke symptoms, etc.), always set urgencyLevel to "emergency"
-      5. Only return the JSON response, no other text
+      5. Provide specific dietary recommendations based on the symptoms
+      6. List relevant medications and supplements, but always emphasize consulting a doctor first
+      7. Only return the JSON response, no other text
     `;
   }
 
@@ -166,7 +200,9 @@ class GeminiSymptomService {
       severity: severityMap[geminiResponse.urgencyLevel] || 1,
       recommendations: geminiResponse.recommendations,
       requiresAttention: geminiResponse.requiresAttention,
-      disclaimer: geminiResponse.disclaimer
+      disclaimer: geminiResponse.disclaimer,
+      diet: geminiResponse.diet,
+      medications: geminiResponse.medications
     };
   }
 
